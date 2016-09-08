@@ -1,0 +1,73 @@
+<header style="margin-bottom:200px;"></header>
+
+<sidebar></sidebar>   
+
+<div *ngFor="let about of abouts" class="container"><!--IMPORTANT-->
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-9">
+            
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="tab-content">
+                        <div class="col-xs-12">
+                                
+                            <ol class="breadcrumb">
+                                <li class="margin-right"><a>Inicio</a></li>
+                                <li class="active">{{about.seccion}}</li>
+                            </ol>
+
+                            <div class="video-container">
+                                <iframe src="{{about.videoYT}}" frameborder="0" width="560" height="315"></iframe>
+                            </div>
+
+                            <div style="text-align:center">
+                                <a style="width:49.5%;" class="btn-link"><i class="icon-fontawesome-webfont-7"></i> Ver imágenes</a>
+                                <a style="width:49.5%;" class="btn-link"><i class="icon-fontawesome-webfont-7"></i> Vista 360º</a>
+                            </div>
+                            <br />
+                            
+                            <h1 align="center">{{about.seccion}}</h1>
+                            <h2>{{about.tituloH1}}</h2>
+                        </div>
+                            
+                            <div class="clear25 visible-xs"></div>
+                            <div class="top-body-text">{{about.descripcion}}</div>
+                            
+                            <div class="clear25"></div>
+
+                            <h3>Atractivos Principales</h3>
+                            <hr class="hr-xcaret"/>
+
+   
+                            <div *ngFor="let a of about.atractivos" class="top-body-text">
+
+                                <div class="col-xs-12 col-sm-6">
+                                    <img src="{{a.img}}" alt="..." data-blzexdl="1">
+                                </div>
+                            
+                                <div class="clear25 visible-xs"></div>
+                                <h3>{{a.titulo}}</h3>
+                                <br />
+                                <div class="top-body-text">{{a.desc}}</div>
+                                <div class="clear25"></div>
+                            </div>
+          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+     
+<prefooter></prefooter>
+<footer></footer>
+
+
+
+
+
+
+
+
+

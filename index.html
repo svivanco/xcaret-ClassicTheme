@@ -1,0 +1,25 @@
+<html>
+
+  <head>
+    <title>Angular2 Http Demo</title>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+    
+    <!--LOAD IN THE HTML BECAUSE I WANT THIS CSS AS GLOBAL-->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+  </head>
+
+  <!-- 3. Display the application -->
+  <body>
+    <xcaret-app>Cargando...</xcaret-app>
+  </body>
+
+</html>
